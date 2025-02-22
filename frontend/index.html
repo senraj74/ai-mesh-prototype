@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Mesh Segmentation + Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AI 3D Mesh Segmentation</h1>
+
+    <!-- Chatbot Section -->
+    <div id="chat-container">
+        <div id="chat-box" class="chat-message bot-message"></div>
+        <input type="text" id="chat-input" placeholder="Ask me anything...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <!-- File Upload Section -->
+    <input type="file" id="fileInput" accept=".obj,.stl,.ply">
+    <button onclick="uploadFile()">Upload</button>
+    <p id="statusMessage"></p>    
+
+    <!-- 3D Viewer Section -->
+    <div id="viewer-container"></div>
+
+    <!-- ✅ Load Three.js & GLTFLoader.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
+  
+    <script src="main.js"></script>
+    <script src="viewer.js"></script>
+</body>
+</html>
