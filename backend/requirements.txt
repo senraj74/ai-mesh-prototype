@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+openai
+trimesh
+open3d
+torch
+torchvision
+torchaudio
+scipy
+numpy
+python-dotenv
+pydantic
+scikit-learn
